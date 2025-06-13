@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <!-- icon link  -->
     <link rel="icon" href="/assets/logo.png" />
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dynalight&family=Ephesis&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fleur+De+Leah&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ojuju:wght@200..800&family=Parisienne&family=Rubik:ital,wght@0,300..900;1,300..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Style+Script&family=Tangerine:wght@400;700&family=Varela+Round&family=Yuji+Mai&display=swap" rel="stylesheet">
     <title>TOTC</title>
   </head>
   <body class="overflow-x-hidden">
@@ -14,7 +18,7 @@
     <header class="bg-[#49BABC] rounded-b-[20%]">
       <!-- navbar -->
       <nav>
-        <div class="navbar-container flex flex-col md:flex-row justify-around items-center">
+        <div class="navbar-container flex flex-col md:flex-row justify-around items-center pt-4">
 
           <div class="logo-container">
             <img class="w-[80px]" src="/assets/logo.png" alt="" />
@@ -33,7 +37,7 @@
               <button class="bg-white text-black rounded-3xl py-2 px-8">
                 Login
               </button>
-                <button class="bg-[#7DC9CA] rounded-3xl py-2 px-8 text-white ">Sign Up
+                <button class="bg-[#7DC9CA] rounded-3xl py-2 px-8 text-white hover:bg-white hover:text-black transition-all duration-300">Sign Up
                 </button>
             </div>
           </div>
@@ -43,33 +47,43 @@
  <!-- end of navbar  -->
 
  <!-- main section  -->
-    <div class="main-content-container flex justify-evenly items-center">
-        <div class="main-left-side-container flex flex-col">
+    <div class="main-content-container flex justify-evenly items-center mx-5">
+        <div class="main-left-side-container flex flex-col items-start justify-start">
 
-        <div class="left-text-container flex space-x-2 mt-36">
-        <p class="text-4xl text-white font-serif"><strong class="text-4xl text-[#F48C06] font-serif font-semibold mx-2">Studying</strong>Online is now</p>
+        <div class="left-text-container w-full flex justify-center md:justify-start space-x-2 md:mt-36 mt-16 lg:mt-0">
+        <p class="lg:text-4xl md:text-6xl text-3xl text-white text-nowrap font-myfont"><strong class="lg:text-4xl md:text-6xl text-3xl text-[#F48C06] font-semibold me-2 font-myfont">Studying</strong>Online is now</p>
     </div>
-    <p class="text-4xl text-white font-serif pt-2">much easier</p>
-    <p class="text-left text-white pt-8 pb-4">TOTC is an interesting platform that will teach <br> you in more and interactive way</p>
-        <div class="main-left-btns flex justify-start items-center">
-            <button class="bg-[#7DC9CA] py-4 px-8 rounded-full text-white text-nowrap font-serif">Join for free</button>
-            <div class="watch flex justify-center mt-5">
+    <p class="lg:text-4xl md:text-6xl text-3xl text-white font-sans pt-2 font-myfont mx-auto md:mx-0 text-center md:text-left">much easier</p>
+    <p class="text-left text-white pt-8 pb-4 text-sm md:text-lg lg:text-md text-center">TOTC is an interesting platform that will teach you in more and interactive way</p>
+
+        <div class="main-left-btns flex justify-center w-full lg:justify-start items-center">
+            <button class="bg-[#7DC9CA] font-myfont py-4 px-8 rounded-full text-white text-nowrap hover:bg-white hover:text-black transition-all duration-300">Join for free</button>
+            <div class="watch flex justify-start md:justify-center mt-5">
                 <img class="size-28" src="/assets/play-button.png" alt="">
-                <p class="mt-8 text-lg text-nowrap">Watch how it works</p>
+                <p class="md:mt-8 mt-4 text-sm md:text-lg md:text-nowrap font-myfont">Watch how it works</p>
             </div>
         </div>
 
+         <div class="left-side-btns-container md:w-[50%] mx-auto space-x-3 flex lg:hidden text-nowrap justify-around items-center mb-10">
+              <button class="bg-white text-black rounded-3xl py-2 px-8">
+                Login
+              </button>
+                <button class="bg-[#7DC9CA] rounded-3xl py-2 px-8 text-white hover:bg-white hover:text-black transition-all duration-300">Sign Up
+                </button>
+            </div>
+
         </div>
 
-        <div class="main-right-side-container hidden lg:block">
+        <div class="main-right-side-container hidden lg:inline-flex">
             <div class="right-side relative">
-              <img class="h-[100%]" src="/assets/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png" alt="">
-              <img class="absolute top-40" src="/assets/notifications.png" alt="">
+              <img src="/assets/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png" alt="">
+              <img class="absolute top-40 h-fit" src="/assets/notifications.png" alt="">
             </div>
         </div>
 
 
     </div>
     </header>
+    <!-- end of header  -->
   </body>
 </html>
